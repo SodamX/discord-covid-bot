@@ -25,7 +25,7 @@ async def on_message(message):
         TotalRecovered = format(str(covid["TotalRecovered"]))
         TotalDeath = format(str(covid["TotalDeath"]))
         updateTime = format(str(covid["updateTime"]))
-        embed = discord.Embed(title = f'[ 코로나 ]', description = f'```국내 확진자수 : {TotalCase}\n국내 완치자수 : {TotalRecovered}\n국내 사망자수 : {TotalDeath}```기준 : {updateTime}', color=0x3bd1ff)
+        embed = discord.Embed(title = f'[ 코로나 ]', description = f'```국내 확진자수 : {TotalCase}\n국내 완치자수 : {TotalRecovered}\n국내 사망자수 : {TotalDeath}```\n기준 : {updateTime}', color=0x3bd1ff)
         await message.channel.send(embed=embed)
 
 client.run(config.token)
